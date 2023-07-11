@@ -1,0 +1,55 @@
+.about {
+  margin: 0;
+  padding: 10px;
+}
+
+.about-title {
+  color: rgba(252, 70, 107, 1);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 7vh;
+  text-align: center;
+}
+
+.about-content {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-frame {
+  width: 350px;
+  height: 450px;
+  background-image: url('../../assets/images/model1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.text-block {
+  font-family: 'Sintony', sans-serif;
+  width: 100vh;
+  color: white;
+  text-align: justify;
+  padding: 10px;
+}
+
+
+
+
+/* Affichage mobile */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .photo-frame {
+    margin-bottom: 20px;
+  }
+  .text-block {
+    width: auto;
+  }
+  .text-block p {
+    width: auto;
+    font-size: 15px;
+    padding: 10px;
+  }
+}

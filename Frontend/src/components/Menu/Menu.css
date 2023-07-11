@@ -1,0 +1,127 @@
+.menu-header {
+  padding: 5px;
+  border-bottom: 1px solid rgba(252, 70, 107, 1);
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 40px!important;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-list li {
+  margin-right: 20px;
+}
+
+.menu-list li:last-child {
+  margin-right: 0;
+}
+
+.menu-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.menu-list li a.active {
+  color: rgba(252, 70, 107, 1);
+}
+.menu-list li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 2px;
+  background-color: rgba(252, 70, 107, 1);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scaleX(0);
+}
+
+.menu-list li a.active::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.menu-list li a:hover {
+  color: rgba(252, 70, 107, 1);
+}
+
+.menu-icon {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 999;
+    color: rgba(252, 70, 107, 1);
+  }
+
+  .menu.open ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #353543;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+  }
+  .menu.open li {
+    margin-top: 10px;
+    
+  }
+  .menu.open li a {
+    color: white;
+    text-align: center;
+  }
+
+  .menu.open li a.active {
+    color: rgba(252, 70, 107, 1);
+  }
+  .menu-list li {
+    margin-right: 0;
+  }
+}

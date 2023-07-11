@@ -1,0 +1,125 @@
+/* Tableau avec les catégories sur le côté gauche */
+.tableau-style1 {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .tableau-style1 th {
+    padding: 8px;
+    font-weight: bold;
+    
+  }
+  
+  .tableau-style1 td,
+  .tableau-style1 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: white;
+  }
+ 
+  
+  .tableau-style1 th:first-child {
+    width: 200px;
+    
+  }
+  
+  .tableau-style1 td:first-child {
+    font-weight: bold;
+    color: rgba(252, 70, 107, 1);
+  }
+  
+  .tableau-style1 tr:first-child td {
+    border-top: none;
+  }
+  
+  .tableau-style1 td:first-child {
+    border-left: none;
+  }
+  
+  .tableau-style1 td:last-child {
+    border-right: none;
+  }
+  
+  .tableau-style1 .categorie {
+    font-weight: normal;
+  }
+  
+  .tableau-style1 .categorie-cell {
+    font-weight: bold;
+  }
+  
+  .tableau-style1 .categorie-cell,
+  .tableau-style1 .categorie {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .tableau-style2 {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed; /* Ajout de cette ligne */
+  }
+  
+  .tableau-style2 th {
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(252, 70, 107, 1);
+  }
+  
+  .tableau-style2 td,
+  .tableau-style2 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap; /* Ajout de cette ligne */
+    overflow: hidden; /* Ajout de cette ligne */
+    text-overflow: ellipsis; /* Ajout de cette ligne */
+    color: white;
+  }
+  
+  .tableau-style2 th:first-child {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .tableau-style2 tr:first-child th {
+    border-top: none;
+    width: 10px;
+  }
+  
+  .tableau-style2 td:first-child {
+    font-weight: bold;
+  }
+  
+  .tableau-style2 td:first-child,
+  .tableau-style2 th:first-child {
+    border-left: none;
+  }
+  
+  .tableau-style2 td:last-child,
+  .tableau-style2 th:last-child {
+    border-right: none;
+    justify-content: center;
+  }
+  
+  
+  .icons-dash .edit-icon {
+    margin-right: 8px; /* Ajouter une marge à droite */
+    color: rgba(252, 70, 107, 1);
+  }
+  
+  .icons-dash .delete-icon {
+    margin-left: 8px; /* Ajouter une marge à gauche */
+    color: red;
+  }
+  @media (max-width: 767px) {
+    .tableau-style2 th,
+    .tableau-style2 td {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }

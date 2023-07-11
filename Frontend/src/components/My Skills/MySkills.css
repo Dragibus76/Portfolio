@@ -1,0 +1,113 @@
+.my-skills {
+    margin-top: 50px;
+  }
+  
+  .my-skills-title {
+    font-size: 7vh;
+    margin-bottom: 10px;
+    color: rgba(252, 70, 107, 1);
+    font-family: "Inter Tight", sans-serif;
+  }
+  
+  .my-skills-description {
+    font-family: "Sintony", sans-serif;
+    color: white;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 100vh;
+    text-align: justify;
+    margin: 0 auto;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skills-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px solid;
+    border-image: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%) 1;
+    border-image-slice: 1;
+    transition: border-image-source 0.3s;
+    animation: gradientAnimation 3s infinite;
+    transition: ease-in-out 0.5s;
+    padding: 5px;
+    margin: 50px;
+  }
+  
+  .skill-category {
+    margin: 10px;
+    width: calc(10% - 20px); /* Pour afficher maximum 5 blocs par ligne */
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .skill-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .skill-icon:hover {
+    color: rgba(252, 70, 107, 1);
+  }
+  
+  .IconsText {
+    color: white;
+  }
+  .skill-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill-progress {
+    width: 70px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 4px;
+   margin-top: 5px;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: rgba(252, 70, 107, 1);
+    border-radius: 4px;
+  }
+  
+  .IconsText {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Affichage mobile */
+@media (max-width: 768px) {
+    .my-skills-description {
+        padding: 30px;
+        text-align: justify;
+      }
+      .skills-block {
+        margin: 30px;
+      }
+      .skill-progress {
+        width: 60px;
+        height: 8px;
+        background-color: #ccc;
+        border-radius: 4px;
+       margin-top: 5px;
+      }
+
+      .skill-category {
+        margin: 10px;
+        width: calc(20% - 20px); /* Pour afficher maximum 5 blocs par ligne */
+        text-align: center;
+        padding: 5px;
+      }
+      .IconsText {
+        text-align: center;
+      }
+  }
+  

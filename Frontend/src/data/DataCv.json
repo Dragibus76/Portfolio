@@ -1,0 +1,61 @@
+{
+    "experiencesProfessionnelles": [
+      {
+        "year": "2011",
+        "title": "GRAPHISTE",
+        "company": "Peppergraphik",
+        "city": "Le Havre"
+      },
+      {
+        "year": "2012",
+        "title": "INFOGRAPHISTE",
+        "company": "Service Impression",
+        "city": "Gonfreville L'Orcher"
+      },
+      {
+        "year": "2013",
+        "title": "GRAPHISTE",
+        "company": "I.U.T",
+        "city": "Le Havre"
+      },
+      {
+        "year": "2015",
+        "title": "GRAPHISTE",
+        "company": "Peppergraphique",
+        "city": "Le Havre"
+      },
+      {
+        "year": "2017",
+        "title": "FREELANCE",
+        "company": "RVB WEB",
+        "city": "Gonfreville L'Orcher"
+      }
+    ],
+    "etudes": [
+        {
+            "year": "2008",
+            "title": "BEP PEINTURES ET FINITIONS",
+            "company" : "Lycée Auguste Perret",
+            "city": "Le Havre"
+          },
+          {
+            "year": "2013",
+            "title": "BACCALAUREAT PROFESSIONNEL",
+            "company" : "Fodeno Le Havre",
+            "city": "Le Havre"
+          },
+          {
+            "year": "2022",
+            "title": "CERTIFICATION NIVEAU 5 DEVELOPPEUR WEB",
+            "company" : "Openclassrooms",
+            "city": "A Distance"
+          },
+          {
+            "year": "2023",
+            "title": "CERTIFICATION NIVEAU 6 DEVELOPPEUR",
+            "company" : "Openclassrooms",
+            "city": "A Distance"
+          }
+    ]
+  }
+  

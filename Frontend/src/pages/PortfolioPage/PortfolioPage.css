@@ -1,0 +1,134 @@
+.portfolio-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolio-page-info {
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.portfolio-page-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.PortfolioPageTile {
+  font-size: 7vh;
+}
+.portfolio-page-category-tag {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: transparent;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 5px;
+  border: 1px solid rgba(252, 70, 107, 1);
+  font-size: 12px;
+}
+
+.portfolio-page-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid rgba(252, 70, 107, 1);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.TitleGalery,.PortfolioPageTile {
+  color: rgba(252, 70, 107, 1);
+  font-family: 'Inter Tight', sans-serif;
+}
+
+.TitleGalery {
+  font-size: 5vh;
+}
+.portfolio-page-images h1 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.portfolio-page-info p {
+  text-align: center;
+}
+
+.portfolio-page-images img {
+  width: calc(25.33% - 30px);
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.portfolio-page-images img:hover {
+  transform: scale(1.1);
+}
+
+.link-tag {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: rgba(252, 70, 107, 1);
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  font-weight: bold;
+  margin: 20px 5px;
+}
+
+.link-tag:hover {
+  background-color: transparent;
+  border: 1px solid rgba(252, 70, 107, 1);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-page-info,
+  .portfolio-page-images {
+    flex-basis: 100%;
+    
+  }
+
+  .portfolio-page-images img {
+    width: calc(50% - 20px);
+  }
+
+  .portfolio-page-info p {
+    text-align:center;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio-page-images img {
+    width: calc(100% - 20px);
+  }
+
+  .portfolio-page-info p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .portfolio-page-category-tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 5px;
+  }
+}

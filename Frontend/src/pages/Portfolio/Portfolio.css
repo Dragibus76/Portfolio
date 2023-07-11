@@ -1,0 +1,23 @@
+.portfolio-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: black;
+  }
+  
+  .portfolio-content {
+    text-align: center;
+  }
+  
+  .portfolio-title {
+    font-size: 2em;
+  font-family: 'Inter Tight', sans-serif;
+  color: rgba(252, 70, 107, 1);
+  }
+  
+  .portfolio-text {
+    margin-top: 1rem;
+    font-family: 'Sintony', sans-serif;
+    color: white;
+  }
+  

@@ -1,0 +1,60 @@
+/* Styles for Home page */
+.section {
+  width: 100%;
+}
+
+.hero-banner {
+  /* Ajoutez vos styles spécifiques ici */
+}
+
+.first-block {
+  background-color: #272833;
+}
+
+.second-block {
+  /* background-color: red; */
+}
+
+.third-block {
+  background-color: #272833;
+  margin-top: 50px;
+}
+
+.fourth-block {
+  /* Ajoutez vos styles spécifiques ici */
+}
+
+.scroll-top-button,.scroll-down-button {
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  background-color: #272833;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+.scroll-top-button:hover,.scroll-down-button:hover {
+  background-color: rgba(252, 70, 107, 1);
+}
+
+.scroll-down-button {
+  /* Ajoutez vos styles spécifiques ici */
+}
+
+.scroll-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  /* Ajoutez vos styles spécifiques ici */
+}
+
+@media only screen and (max-width: 767px) {
+  .scroll-top-button {
+    bottom: 190px;
+  }
+}

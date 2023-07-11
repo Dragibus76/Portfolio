@@ -1,0 +1,119 @@
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  margin: 0;
+}
+
+.cvTitle {
+  color: rgba(252, 70, 107, 1);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 7vh;
+  margin-bottom: 20px;
+}
+
+.CvDescription {
+  font-family: 'Sintony', sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.cv-block {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.cv-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.cv-section-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cv-section-centered.etudes {
+  align-items: flex-start;
+}
+
+.cv-section h2 {
+  color: rgba(252, 70, 107, 1);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cv-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.cvjobtitle{
+  color: rgba(252, 70, 107, 1);;
+}
+
+.cv-year {
+  font-size: 16px;
+  margin-right: 10px;
+  color: rgba(252, 70, 107, 1);
+}
+
+.cv-details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cv-job-title,
+.cv-company,
+.cv-city {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .cv-container {
+   margin: 0; 
+  }
+
+  .cv-block {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .cv-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .cv-section-centered.etudes {
+    align-items: center;
+  }
+  
+  .cv-section h2 {
+    text-align: center;
+  }
+
+  .cv-item {
+    align-items: center;
+    text-align: center;
+  }
+
+  .CvDescription {
+    max-width: 100%;
+  }
+}
+

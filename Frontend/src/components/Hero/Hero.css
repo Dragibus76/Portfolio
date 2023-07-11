@@ -1,0 +1,76 @@
+@import 'animate.css/animate.min.css';
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter Tight', sans-serif;
+  text-align: center;
+  line-height: 0.8;
+  color: white;
+  font-size: 16vh;
+}
+
+.hero-title {
+  color: white;
+  font-size: 16vh;
+  display: flex;
+}
+
+.animate__animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.animate__delay-1s {
+  animation-delay: 1.5s;
+}
+
+.animate__delay-2s {
+  animation-delay: 2s;
+}
+
+.animate__delay-3s {
+  animation-delay: 3s;
+}
+
+/* Styles responsifs */
+@media (max-width: 1024px) {
+  .title-container {
+    font-size: 8vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-container {
+    font-size: 6vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 4vh;
+  }
+}
+
+/* Styles pour tablettes spécifiques */
+@media (max-width: 768px) and (max-height: 1024px) {
+  .hero-title {
+    font-size: 6vh;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+  .hero-title {
+    font-size: 5vh;
+  }
+}
